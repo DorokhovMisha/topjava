@@ -12,12 +12,12 @@ import static ru.javawebinar.topjava.util.ValidationUtil.assureIdConsistent;
 import static ru.javawebinar.topjava.util.ValidationUtil.checkIsNew;
 
 public abstract class AbstractUserController {
-    protected final Logger log = LoggerFactory.getLogger(getClass());
+    //protected final Logger log = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private UserService service;
 
-    public List<User> getAll() {
+    /*public List<User> getAll() {
         log.info("getAll");
         return service.getAll();
     }
@@ -47,5 +47,5 @@ public abstract class AbstractUserController {
     public User getByMail(String email) {
         log.info("getByEmail {}", email);
         return service.getByEmail(email);
-    }
+    }*/
 }

@@ -11,9 +11,9 @@ import static ru.javawebinar.topjava.util.ValidationUtil.checkNotFound;
 @Service
 public class UserService {
 
-    private final UserRepository repository;
+    private UserRepository repository;
 
-    public UserService(UserRepository repository) {
+    /*public UserService(UserRepository repository) {
         this.repository = repository;
     }
 
@@ -39,5 +39,5 @@ public class UserService {
 
     public void update(User user) {
         checkNotFound(repository.save(user), user.getId());
-    }
+    }*/
 }
