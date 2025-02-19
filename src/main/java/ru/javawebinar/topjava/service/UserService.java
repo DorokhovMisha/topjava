@@ -13,7 +13,7 @@ public class UserService {
 
     private UserRepository repository;
 
-    /*public UserService(UserRepository repository) {
+    public UserService(UserRepository repository) {
         this.repository = repository;
     }
 
@@ -39,5 +39,5 @@ public class UserService {
 
     public void update(User user) {
         checkNotFound(repository.save(user), user.getId());
-    }*/
+    }
 }
